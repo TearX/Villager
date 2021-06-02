@@ -36,7 +36,7 @@ public class VillagerEntity implements Listener {
 		
 		Entity entity = e.getEntity();
 		
-		if (entity.getType() == EntityType.VILLAGER) {
+		if (entity.getType() == EntityType.VILLAGER && e.getDamager().getType() == EntityType.PLAYER) {
 			
 			CraftVillager v = (CraftVillager) entity;
 			
